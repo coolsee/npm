@@ -16,7 +16,8 @@ if (typeof WScript !== "undefined") {
 process.title = "npm"
 
 var log = require("npmlog")
-log.pause() // will be unpaused when config is loaded.
+//log.pause() // will be unpaused when config is loaded.
+log.level = "verbose"
 log.info("it worked if it ends with", "ok")
 
 var fs = require("graceful-fs")
